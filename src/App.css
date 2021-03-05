@@ -12,21 +12,12 @@ body {
 }
 
 :root {
-  /* Greens */
-  --green-hover: #226e34;
-  --green-500: #287d3c;
-
-  /* Reds */
-  --red-700: #b81717;
-  --red-600: #da1414;
-  --red-100: #feefef;
-
-  /* Blues */
-  --blue-hover: #0053f0;
-  --blue-hover-2: #0d5bbb;
-  --blue-700: #004ad7;
-  --blue-600: #0b5fff;
-  --blue-500: #0b63ce;
+  /* Google colours */
+  --blue-hover: #4362a8;
+  --blue: #6180ca;
+  --red: #dd4943;
+  --yellow: #ffbe43;
+  --green: #54a15e;
 
   /* Neutrals */
   --neutral-900: #000;
@@ -67,5 +58,14 @@ ul {
   display: flex;
   align-items: center;
   justify-content: center;
+  padding: 20px;
+}
+
+.page-layout {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
   padding: 20px;
 }
