@@ -1,0 +1,71 @@
+/* Reset & custom vars */
+
+body {
+  min-height: 100vh;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Source Sans Pro", sans-serif;
+  box-sizing: border-box;
+}
+
+:root {
+  /* Greens */
+  --green-hover: #226e34;
+  --green-500: #287d3c;
+
+  /* Reds */
+  --red-700: #b81717;
+  --red-600: #da1414;
+  --red-100: #feefef;
+
+  /* Blues */
+  --blue-hover: #0053f0;
+  --blue-hover-2: #0d5bbb;
+  --blue-700: #004ad7;
+  --blue-600: #0b5fff;
+  --blue-500: #0b63ce;
+
+  /* Neutrals */
+  --neutral-900: #000;
+  --neutral-700: #2c3a4b;
+  --neutral-600: #545d69;
+  --neutral-500: #6d7580;
+  --neutral-400: #a5abb3;
+  --neutral-300: #dadee3;
+  --neutral-200: #f4f6f9;
+  --neutral-100: #fff;
+}
+
+a {
+  text-decoration: none;
+}
+
+button {
+  outline: none;
+  border: none;
+  background: none;
+}
+
+li,
+ul {
+  list-style: none;
+}
+
+/* Util classes */
+
+.flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.page-center {
+  min-height: calc(100vh - 60px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
