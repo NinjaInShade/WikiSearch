@@ -1,12 +1,13 @@
 const placeholders = [
   "tallest building in the world",
-  "turtle pics",
-  "best actions films",
-  "who founded youtube",
-  "elon musk net worth",
-  "how to create a website",
-  "best anti-virus softwares",
-  "best reliable first cars",
+  "turtle",
+  "action film",
+  "youtuber",
+  "elon musk",
+  "html",
+  "anti-virus softwares",
+  "fastest cars",
+  "steam",
 ];
 
 function getRandomInt(max) {

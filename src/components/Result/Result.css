@@ -1,0 +1,39 @@
+.result {
+  width: 100%;
+  overflow: hidden;
+  margin-bottom: 1.5rem;
+}
+
+.result-title {
+  color: #1a0dab;
+  font-size: 1.3rem;
+  font-weight: 600;
+}
+
+.result-title:hover {
+  text-decoration: underline;
+}
+
+.result-title:visited {
+  color: #660099;
+}
+
+.result-description {
+  display: -webkit-box;
+  max-width: 100%;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  flex-grow: 1;
+}
+
+.result img {
+  margin-right: 0.8rem;
+  width: 80px;
+}
+
+.bottom-container {
+  display: flex;
+  align-items: stretch;
+  margin-top: 0.6rem;
+}

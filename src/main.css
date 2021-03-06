@@ -1,5 +1,5 @@
 header {
-  padding-top: 8rem;
+  padding-top: 6rem;
 }
 
 header h1 {
@@ -47,6 +47,21 @@ header h1 span {
 
 .wikipedia:hover {
   color: var(--neutral-700);
+}
+
+.result-number {
+  color: var(--neutral-600);
+  font-weight: 600;
+  font-size: 1.2rem;
+  margin: 0 25px 1.5rem 25px;
+}
+
+.results {
+  margin: 0 25px;
+}
+
+.content-container {
+  max-width: 600px;
 }
 
 @media (max-width: 350px) {

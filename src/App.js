@@ -1,12 +1,17 @@
+import { useState } from "react";
 import SearchBar from "./components/SearchBar/SearchBar";
+import Result from "./components/Result/Result";
 
 import "./App.css";
 import "./main.css";
 
 function App() {
+  const [results, setResults] = useState(undefined);
+  const [loading, setLoading] = useState(false);
+
   return (
     <main className="page-layout">
-      <div>
+      <div className="content-container">
         <header>
           <h1>
             <span className="blue">S</span>
@@ -20,7 +25,24 @@ function App() {
             <span className="red exclamation">!</span>
           </h1>
         </header>
-        <SearchBar />
+        <SearchBar setResults={setResults} setLoading={setLoading} />
+
+        {results && <p className="result-number">Displaying {results.length} results.</p>}
+
+        {loading ? (
+          <p>Loading...</p>
+        ) : (
+          <ul className="results">
+            {results &&
+              results.map((result, index) => {
+                return (
+                  <li key={index}>
+                    <Result result={result} />
+                  </li>
+                );
+              })}
+          </ul>
+        )}
       </div>
       <p className="footer">
         &lt;&lt; Powered by{" "}
