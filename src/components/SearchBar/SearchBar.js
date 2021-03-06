@@ -49,7 +49,7 @@ export default function SearchBar({ setResults, setLoading }) {
   return (
     <form className="searchbar-container">
       <input type="text" className="searchbar" value={input} onChange={(e) => setInput(e.target.value)} placeholder={placeholder} />
-      <button className="search" onClick={(e) => search(e)} type="submit">
+      <button className="search" onClick={(e) => search(e)} type="submit" aria-label="search">
         <i className="fas fa-search"></i>
       </button>
     </form>
